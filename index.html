@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- CONFIGURAÇÕES -->
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="./assets/css/reset.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Twitter Clone</title>
+    </head>
+
+    <!-- CORPO -->
+    <body>
+
+        <div class="container">
+
+            <!-- CABEÇALHO -->
+            <header class="cabecalho">
+                <!-- LOGO -->
+                <figure class="cabecalho__logo">
+                    <img src="./assets/img/bird 1.svg" alt="Logo Twitter Clone">
+                    <figcaption hidden>Logo Twitter Clone</figcaption> <!-- Legenda da Logo -->
+                </figure>
+
+                <!-- MENU DE NAVEGAÇÃO -->
+                <nav class="cabecalho__menuNav">
+
+                    <!-- LISTA DE LINKS -->
+                    <ul class="cabecalho__menuLista">
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Home.png" alt="">
+                            <a class="ativado" href="index.html">Página Inicial</a>
+                        </li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Hashtag.png" alt="">
+                            <a href="">Explorar</a>
+                        </li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Notification.png" alt="">
+                            <a href="">Notificações</a>
+                        </li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Group.png" alt="">
+                            <a href="">Mensagens</a>
+                        </li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Group (1).png" alt="">
+                            <a href="">Itens salvos</a>
+                        </li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Group (2).png" alt="">
+                            <a href="">Listas</a>
+                        </li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/ProfilePic.png" alt="">
+                            <a href="">Perfil</a>
+                        </li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Group (3).png" alt="">
+                            <a href="">Mais</a>
+                        </li>
+                    </ul>
+
+                </nav>
+
+
+            </header>
+
+            <!-- CONTEÚDO PRINCIPAL -->
+            <main class="conteudoPrincipal">
+
+                <h3 class="conteudoPrincipal__titulo">Home</h3>
+
+                <!-- CAIXA DE POSTAGEM -->
+                <form action="#" class="conteudoPrincipal__formulario">
+                    <textarea name="textoTweet" placeholder="O que está acontecendo?"></textarea>
+                    
+                    <button type="submit">Tweetar</button>
+                </form>
+
+                <!-- FEED DE NOTÍCIAS -->
+                <section class="conteudoPrincipal__feed">
+
+                    <!-- LISTAGEM DAS NOTÍCIAS-->
+                    <ul class="conteudoPrincipal__listaTweets">
+                        
+                    </ul>
+                    
+                </section>
+
+            </main>
+
+        </div>
+
+        <script src="./assets/js/script.js"></script>
+
+    </body>
+</html>
