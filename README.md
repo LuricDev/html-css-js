@@ -4,4 +4,4 @@ Clone do twitter desenvolvido na aula da Maratona de Programação 3 KenzieAcade
 
 ## Layout
 
-- [Twitter](./assets/img/twitter.png)
+![Alt text](./assets/img/twitter.png "Twitter")
