@@ -1,0 +1,143 @@
+/* CSS => Cascading StyleSheet (Folha de estilo em cascata)
+
+Estrutura
+
+Regra CSS:
+seletor {
+    propriedade: valor; -> declaração
+}
+
+CSS BEM
+
+B -> Bloco
+E -> Elemento
+M -> Modificador
+
+margin: top right bottom left; margin: 0 0 0 0;
+margin: top right/left bottom; margin: 0 0 0;
+margin: top/bottom right/left; margin 0 0;
+margin: todos os lados; margin 0;
+
+*/
+
+/* BODY */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* CABEÇALHO */
+.cabecalho{
+    flex-basis: 22%;
+}
+.cabecalho__logo{
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.cabecalho__logo img{}
+.cabecalho__logo figcaption{
+    display: none;
+}
+
+.cabecalho__menuNav{}
+.cabecalho__menuLista{}
+.cabecalho__menuItem{
+    margin-bottom: 25px;
+}
+.cabecalho__menuItem img{
+    max-width: 26px;
+    margin-right: 10px;
+}
+.cabecalho__menuItem a{
+    color: #333333;
+    text-decoration: none;
+    font-size: 20px;
+    vertical-align: super;
+    font-weight: 700;
+}
+.cabecalho__menuItem a.ativado{
+    color: #1da1f2;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.conteudoPrincipal{
+    flex-basis: 70%;
+    border-left: 1px solid #e7ecf0;
+    border-right: 1px solid #e7ecf0;
+}
+.conteudoPrincipal__titulo{
+    padding: 10px 30px;
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.conteudoPrincipal__formulario{
+    padding: 10px 30px;
+    border-top: 1px solid #e7ecf0;
+    border-bottom: 10px solid #e7ecf0;
+    text-align: right;
+    font-size: 19px;
+}
+.conteudoPrincipal__formulario textarea{
+    display: block;
+    padding-top: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    height: 55px;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+.conteudoPrincipal__formulario button{
+    background-color: #a8dcfc;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.conteudoPrincipal__formulario button:hover{
+    background-color: #1da1f2;
+}
+
+.conteudoPrincipal__feed{}
+.conteudoPrincipal__listaTweets{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+.conteudoPrincipal__tweet{
+    padding: 20px 20px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #e7ecf0;
+}
+
+.tweet__fotoPerfil{}
+.tweet__conteudo{
+    margin-left: 15px;
+}
+.tweet__conteudo h2{
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.tweet__conteudo span{
+    display: inline-block;
+    color: #828282;
+    font-size: 14px;
+}
+.tweet__conteudo p{
+    margin-top: 15px;
+    color: #333333;
+}
